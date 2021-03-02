@@ -25,9 +25,3 @@ jobs:
         curl -fLOsS $POLARIS_SERVER_URL/api/tools/polaris_cli-linux64.zip
         unzip -d /tmp -jo polaris_cli-linux64.zip
         /tmp/polaris --co project.name=$PROJECT analyze -w -- $BLDCMD
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
