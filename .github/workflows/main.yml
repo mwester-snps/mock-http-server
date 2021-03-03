@@ -34,4 +34,4 @@ jobs:
     - name: Detect
       uses: blackducksoftware/github-action@2.0.0
       with:
-        args: '--blackduck.url="$BLACKDUCK_SERVER_URL" --blackduck.api.token="$BLACKDUCK_ACCESS_TOKEN" --detect.project.name="$PROJECT" --detect.risk.report.pdf=true'
+        args: '--blackduck.url="$BLACKDUCK_SERVER_URL" --blackduck.api.token="$BLACKDUCK_ACCESS_TOKEN" --detect.tools.excluded=POLARIS --detect.project.name="$PROJECT" --detect.risk.report.pdf=true'
